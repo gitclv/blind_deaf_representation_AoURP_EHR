@@ -84,3 +84,16 @@ fam_three_col["need"] = fam_three_col['answer_x'].map(household_to_inc_d)
 fam_three_col = fam_three_col.dropna()
 
 fam_three_col['status'] = fam_three_col[['trans_y', 'need']].apply(status, axis=1)
+
+#################### Age features
+# add age value at fixed time before conducting this analysis
+def calculate_age(born):
+    reference = datetime(2022,6,1) #this is q2 2022
+    return reference.year - born.year - ((reference.month, reference.day) < (born.month, born.day))
+
+eye_ear_demographics['age_years'] = eye_ear_demographics['date_of_birth'].apply(calculate_age)
+all_ehr_dem['age_years'] = all_ehr_dem['date_of_birth'].apply(calculate_age)
+
+# Referenced in visualization.py
+working_age_full_numer = full_join_pwd_df[full_join_pwd_df['age_years'] < 65]
+working_age_full_denom = full_join_ehr_df[full_join_ehr_df['age_years'] < 65]
