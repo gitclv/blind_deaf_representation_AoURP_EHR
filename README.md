@@ -10,6 +10,7 @@ Reproducibility aid for publication (DOI:_todo_). Some code removed along AoURP 
 
 - visualization.py: functions and example function calls to produce figure components from structured data (AoURP data not provided)
 - cdc_nhis_dataset.py: code to create a python dataframe from cdc_data
+- feature_engineering: code that does initial processing of dataframes created by AoURP generated SQL (AoURP generated code not provided in this repo)
 - cdc_nhis_sas_work/contents:
     - sas code, sas data, and public helper data requried to begin working with CDC-NHIS data
 - flat_condition_lists/contents:
