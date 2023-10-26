@@ -7,7 +7,7 @@ Reproducibility aid for publication (DOI:_todo_). Some code removed along AoURP 
         - Feature engineering. This includes inclusion/exclusion logic, and a handfull of computed features like povety status from survey data on household size and income.
     - Because the **All of Us Research Program** manages all participant data (and the python+SQL code to create cohorts from it) under the *Researcher Workbench*, no participant data or database query/manipulation code is included in this repository.
         - The functions shared here will assist those seeking to reproduce our work after they have ingested the cohort.
-        - To utilizes these functions, a research first needs to reference the online supplement which includes the SNOMED "standard concept name" of each condition for inclusion in our primary cohorts, then create their own cohort by entering those into the *AoURP Researcher Workbench -- Cohort Builder*.
+        - To utilizes these functions, a researcher first needs to reference the online supplement which includes the SNOMED "standard concept name" of each condition for inclusion in our primary cohorts, then create their own cohort by entering those into the *AoURP Researcher Workbench -- Cohort Builder*.
         - After those steps, the *Researcher Workbench* will generate SQL code compliant with the current data model of the AoURP. It is likely some minor grouping/transformations be performed to pass the data into the functions included here.
 
 ## Filesystem
