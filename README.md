@@ -1,5 +1,5 @@
 # Breadcrumbsblind_deaf_representation_AoURP_EHR
-Reproducibility aid for publication (DOI:_todo_). Some code removed along AoURP guidelines.
+Reproducibility aid for publication, [DOI] (https://doi.org/10.1038/s41591-023-02607-x). Some code removed along AoURP guidelines.
 
 - Ethos:
     - This code should allow technical users to digest the exact logic behind the following contributions for this paper:
